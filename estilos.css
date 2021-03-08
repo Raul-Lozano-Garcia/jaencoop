@@ -1,0 +1,147 @@
+/* RESETEO */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+html,body{
+    font-size: 16px;
+    font-family: "Roboto Slab";
+}
+
+h1{
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+h3{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+h4{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+small{
+    color: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+a:hover{
+    color:#FFFFFF;
+}
+
+.flaticon-gorjeo:before,.flaticon-simbolo-de-la-aplicacion-de-facebook:before,.flaticon-logotipo-de-instagram::before{
+    margin: 0px;
+    margin-right: 10px;
+}
+
+/* HEADER */
+header#header{
+    min-height: 80vh;
+}
+
+header#header div#barra-top{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0px 100px;
+}
+
+header#header div#barra-top img{
+    width: 150px;
+    height: 50px;
+}
+
+header#header div#barra-top nav#menu ul li a{
+    padding: 10px 15px;
+    background-color: #555555;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
+header#header div#barra-top nav#menu ul li a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+header#header div#banner{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0, 43, 0, 0.8)) ,url(assets/imagenes/banner.jpg) no-repeat center center/cover;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#contenedor{
+    display: flex;
+}
+
+/* MAIN */
+main#main{
+    min-height: 80vh;
+    width: 80%;
+    margin-left: auto;
+}
+
+main#main div.producto{
+    text-align: center;
+}
+
+main#main div.producto a{
+    color: #2c2c2c;
+}
+
+main#main div.producto a:hover{
+    color:#000000;
+}
+
+/* ASIDE */
+aside#aside{
+    min-height: 80vh;
+    width: 10%;
+    background-color: #005a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside#aside section#redes article#social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside#aside section#redes article#social a{
+margin: 10px 0px;
+}
+
+/* FOOTER */
+footer#footer{
+    min-height: 20vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
