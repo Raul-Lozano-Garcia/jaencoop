@@ -54,12 +54,12 @@ a:hover{
     margin-right: 10px;
 }
 
-/* HEADER */
-header#header{
+/* HEADER GENERAL */
+header#header-general{
     min-height: 80vh;
 }
 
-header#header div#barra-top{
+header#header-general div#barra-top{
     min-height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -68,24 +68,24 @@ header#header div#barra-top{
     padding: 0px 100px;
 }
 
-header#header div#barra-top img{
+header#header-general div#barra-top img{
     width: 150px;
     height: 50px;
 }
 
-header#header div#barra-top nav#menu ul li a{
+header#header-general div#barra-top nav#menu ul li a{
     padding: 10px 15px;
     background-color: #555555;
     border-radius: 25px;
     color: #FFFFFF;
 }
 
-header#header div#barra-top nav#menu ul li a:hover{
+header#header-general div#barra-top nav#menu ul li a:hover{
     background-color: #FFFFFF;
     color: #000000;
 }
 
-header#header div#banner{
+header#header-general div#banner{
     background:linear-gradient(rgba(0,0,0,0.8),rgba(0, 43, 0, 0.8)) ,url(assets/imagenes/banner.jpg) no-repeat center center/cover;
     min-height: 70vh;
     display: flex;
@@ -94,32 +94,29 @@ header#header div#banner{
     flex-direction: column;
 }
 
-div#contenedor{
+/* MAIN GENERAL*/
+main#main-general{
     display: flex;
-}
-
-/* MAIN */
-main#main{
     min-height: 80vh;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
 }
 
-main#main div.producto{
+main#main-general section#productos{
+    width: 90%;
     text-align: center;
 }
 
-main#main div.producto a{
+main#main-general section#productos a{
     color: #2c2c2c;
 }
 
-main#main div.producto a:hover{
+main#main-general section#productos a:hover{
     color:#000000;
 }
 
-/* ASIDE */
-aside#aside{
-    min-height: 80vh;
+/* ASIDE*/
+main#main-general aside#aside{
     width: 10%;
     background-color: #005a00;
     display: flex;
@@ -127,13 +124,13 @@ aside#aside{
     justify-content: center;
 }
 
-aside#aside section#redes article#social{
+main#main-general aside#aside div#social{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-aside#aside section#redes article#social a{
+main#main-general aside#aside div#social a{
 margin: 10px 0px;
 }
 
