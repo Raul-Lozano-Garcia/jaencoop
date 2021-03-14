@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8"/>
+
+    <title>Ejemplo menu despegable</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }  
+
+        nav a{
+            text-decoration:none;
+            font-size:16px;
+            color: #ffffff;
+        }
+                    
+        nav li{
+            display:inline-block;
+            width:150px;
+            height:30px;
+            padding:5px 10px;
+            background-color:#000000;
+            border:1px solid #000000;
+            text-align:center;
+            color:#ffffff;
+            position:relative;
+        }
+                    
+        nav li:hover{
+            background-color:#aa2233;
+        }
+                    
+        nav li>ul{
+            display:none;
+        }
+
+        nav li:hover>ul{
+            display:block;
+            position:absolute;
+            top:30px;
+            left:0px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <a href="../index.html">Volver</a>
+
+    </header>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                
+                <a href="#">Inicio</a>
+
+                <ul>
+
+                    <li><a href="#">Inicio 1</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                
+                <a href="#">Quiénes somos</a>
+
+                <ul>
+
+                    <li><a href="#">Quienes somos 1</a></li>
+
+                    <li><a href="#">Quienes somos 2</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                
+                <a href="#">Servicios</a>
+
+                <ul>
+
+                    <li><a href="#">Servicio 1</a></li>
+
+                    <li><a href="#">Servicio 2</a></li>
+
+                    <li><a href="#">Servicio 3</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                
+                <a href="#">Blog</a>
+
+                <ul>
+
+                    <li><a href="#">Blog 1</a></li>
+
+                    <li><a href="#">Blog 2</a></li>
+
+                    <li><a href="#">Blog 3</a></li>
+
+                    <li><a href="#">Blog 4</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                
+                <a href="#">Contacto</a>
+
+                <ul>
+
+                    <li><a href="#">Contacto 1</a></li>
+
+                    <li><a href="#">Contacto 2</a></li>
+
+                    <li><a href="#">Contacto 3</a></li>
+
+                    <li><a href="#">Contacto 4</a></li>
+
+                    <li><a href="#">Contacto 5</a></li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>
