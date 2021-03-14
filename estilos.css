@@ -11,14 +11,29 @@ html,body{
     font-family: "Roboto Slab";
 }
 
+p{
+    line-height: 160%;
+}
+
 h1{
     font-size: 3rem;
     color: #FFFFFF;
 }
 
+section#producto h1{
+    font-size: 3rem;
+    color: #000000;
+}
+
 h2{
     font-size: 2rem;
     color: #FFFFFF;
+}
+
+section#producto h2{
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 50px;
 }
 
 h3{
@@ -54,12 +69,8 @@ a:hover{
     margin-right: 10px;
 }
 
-/* HEADER GENERAL */
-header#header-general{
-    min-height: 80vh;
-}
-
-header#header-general div#barra-top{
+/* HEADER*/
+header#header{
     min-height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -68,24 +79,31 @@ header#header-general div#barra-top{
     padding: 0px 100px;
 }
 
-header#header-general div#barra-top img{
+header#header img{
     width: 150px;
     height: 50px;
 }
 
-header#header-general div#barra-top nav#menu ul li a{
+header#header nav#menu ul li a{
     padding: 10px 15px;
     background-color: #555555;
     border-radius: 25px;
     color: #FFFFFF;
 }
 
-header#header-general div#barra-top nav#menu ul li a:hover{
+header#header nav#menu ul li a:hover{
     background-color: #FFFFFF;
     color: #000000;
 }
 
-header#header-general div#banner{
+/* MAIN GENERAL*/
+main#main-general{
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+}
+
+main#main-general section#banner{
     background:linear-gradient(rgba(0,0,0,0.8),rgba(0, 43, 0, 0.8)) ,url(assets/imagenes/banner.jpg) no-repeat center center/cover;
     min-height: 70vh;
     display: flex;
@@ -94,17 +112,12 @@ header#header-general div#banner{
     flex-direction: column;
 }
 
-/* MAIN GENERAL*/
-main#main-general{
-    display: flex;
-    min-height: 80vh;
-    width: 90%;
-    margin-left: auto;
-}
-
+/* PARTE PRODUCTOS */
 main#main-general section#productos{
     width: 90%;
-    text-align: center;
+    text-align: center; 
+    display: inline-block;
+    padding-bottom: 30px;
 }
 
 main#main-general section#productos a{
@@ -115,13 +128,81 @@ main#main-general section#productos a:hover{
     color:#000000;
 }
 
+/* PARTE NOSOTROS */
+main#main-general section#historia{
+    width: 90%;
+    display: inline-block;
+}
+
+main#main-general section#historia article{
+    width: 80%;
+    display: flex;
+    padding: 50px;
+    margin: auto;
+}
+
+main#main-general section#historia article div{
+    width: 50%;
+    min-height: 40vh;
+}
+
+main#main-general section#historia article div.foto1{
+    background:url(assets/imagenes/foto1.jpg) no-repeat center center/cover;
+}
+
+main#main-general section#historia article div.foto2{
+    background:url(assets/imagenes/foto2.jpg) no-repeat center center/cover;
+}
+
+main#main-general section#historia article div.texto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+main#main-general section#historia article p{
+    margin-bottom: 20px;
+}
+
+main#main-general section#historia article div.texto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    order: 1;
+}
+
+/* PARTE VENTAS */
+main#main-general section#producto, main#main-general section#envio{
+    min-height: 60vh;
+    width: 90%;
+    display: inline-block;
+}
+
+main#main-general section#producto article{
+    display: flex;
+    justify-content: space-around;
+}
+
+main#main-general section#producto article div.info{
+    vertical-align: middle;
+}
+
+main#main-general section#producto article div.info p.precio{
+    color: #005a00;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* ASIDE*/
 main#main-general aside#aside{
     width: 10%;
     background-color: #005a00;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    float: right;
+    min-height: 30vh;
+    padding: 20px 10px;
 }
 
 main#main-general aside#aside div#social{
