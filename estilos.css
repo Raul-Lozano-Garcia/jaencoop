@@ -22,8 +22,6 @@ small {
 
 li {
     list-style: none;
-    display: inline-block;
-    margin: 0px 10px;
 }
 
 a {
@@ -52,32 +50,37 @@ header#header img {
     height: 50px;
 }
 
-header#header nav#menu ul li{
+.menu>ul>li {
+    display: inline-block;
+    margin: 0px 10px;
     position: relative;
+
 }
 
-header#header nav#menu ul li a{
-    padding: 10px 15px;
-    background-color: #555555;
-    color: #FFFFFF;
-}
-
-header#header nav#menu ul li a:hover {
-    background-color: #FFFFFF;
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffffff;
     color: #000000;
-}
-            
-header#header nav#menu ul li ul{
-    display:none;
+    width: 200px;
 }
 
-header#header nav#menu ul li:hover ul{
+.menu a:hover {
+    background-color: #9ec200;
+}
+
+.menu ul li ul {
+    display: none;
     text-align: center;
-    display:block;
-    position:absolute;
-    top:41px;
-    left: -10px;
+}
+
+.menu ul li a:hover+ul,
+.menu ul li ul:hover {
+    display: inline;
     z-index: 999;
+    position: absolute;
+    top: 41px;
+    left: 0;
 }
 
 /* MAIN*/
@@ -139,7 +142,7 @@ main#main section#nosotros {
     flex-direction: column;
 }
 
-main#main section#nosotros article{
+main#main section#nosotros article {
     display: flex;
 }
 
@@ -197,16 +200,16 @@ main#main section#producto article div.info p.precio {
 }
 
 /* PARTE ENVIO */
-main#main section#envio{
+main#main section#envio {
     min-height: 80vh;
     padding-top: 50px;
 }
 
-main#main section#envio{
+main#main section#envio {
     background-color: #005a00;
 }
 
-main#main section#envio h2{
+main#main section#envio h2 {
     text-align: center;
     color: #FFFFFF;
     font-size: 2.5rem;
