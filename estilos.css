@@ -101,7 +101,7 @@ main#main section#productos h3 {
 }
 
 main#main section#productos a {
-    color: #2c2c2c;
+    color: #005a00;
 }
 
 main#main section#productos a:hover {
@@ -114,39 +114,45 @@ main#main section#productos a p {
     font-size: 1.5rem;
 }
 
-/* PARTE NOSOTROS */
-main#main section#historia article {
-    width: 80%;
+/* PARTE nosotros */
+main#main section#nosotros {
+    width: 60%;
     display: flex;
-    padding: 50px;
+    padding: 50px 0px;
     margin: auto;
+    flex-direction: column;
 }
 
-main#main section#historia article div {
+main#main section#nosotros article{
+    display: flex;
+}
+
+main#main section#nosotros article div {
     width: 50%;
     min-height: 40vh;
+    border-radius: 50px;
 }
 
-main#main section#historia article div.foto1 {
+main#main section#nosotros article div.foto1 {
     background: url(assets/imagenes/foto1.jpg) no-repeat center center/cover;
 }
 
-main#main section#historia article div.foto2 {
+main#main section#nosotros article div.foto2 {
     background: url(assets/imagenes/foto2.jpg) no-repeat center center/cover;
 }
 
-main#main section#historia article div.texto1 {
+main#main section#nosotros article div.texto1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
 }
 
-main#main section#historia article p {
+main#main section#nosotros article p {
     margin-bottom: 20px;
 }
 
-main#main section#historia article div.texto2 {
+main#main section#nosotros article div.texto2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +160,7 @@ main#main section#historia article div.texto2 {
     order: 1;
 }
 
-/* PARTE VENTAS */
+/* PARTE PRODUCTO */
 main#main section#producto,
 main#main section#envio {
     min-height: 60vh;
