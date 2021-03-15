@@ -52,16 +52,32 @@ header#header img {
     height: 50px;
 }
 
-header#header nav#menu ul li a {
+header#header nav#menu ul li{
+    position: relative;
+}
+
+header#header nav#menu ul li a{
     padding: 10px 15px;
     background-color: #555555;
-    border-radius: 25px;
     color: #FFFFFF;
 }
 
 header#header nav#menu ul li a:hover {
     background-color: #FFFFFF;
     color: #000000;
+}
+            
+header#header nav#menu ul li ul{
+    display:none;
+}
+
+header#header nav#menu ul li:hover ul{
+    text-align: center;
+    display:block;
+    position:absolute;
+    top:41px;
+    left: -10px;
+    z-index: 999;
 }
 
 /* MAIN*/
@@ -114,7 +130,7 @@ main#main section#productos a p {
     font-size: 1.5rem;
 }
 
-/* PARTE nosotros */
+/* PARTE NOSOTROS */
 main#main section#nosotros {
     width: 60%;
     display: flex;
@@ -161,26 +177,39 @@ main#main section#nosotros article div.texto2 {
 }
 
 /* PARTE PRODUCTO */
-main#main section#producto,
-main#main section#envio {
-    min-height: 60vh;
+main#main section#producto {
+    min-height: 80vh;
     width: 90%;
-    display: inline-block;
+    padding-top: 50px;
 }
 
 main#main section#producto article {
     display: flex;
     justify-content: space-around;
-}
-
-main#main section#producto article div.info {
-    vertical-align: middle;
+    align-items: center;
 }
 
 main#main section#producto article div.info p.precio {
     color: #005a00;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* PARTE ENVIO */
+main#main section#envio{
+    min-height: 80vh;
+    padding-top: 50px;
+}
+
+main#main section#envio{
+    background-color: #005a00;
+}
+
+main#main section#envio h2{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
 }
 
 /* ASIDE*/
