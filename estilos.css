@@ -45,41 +45,45 @@ header#header {
     padding: 0px 100px;
 }
 
+/* --LOGO-- */
 header#header img {
     width: 150px;
     height: 50px;
 }
 
-.menu>ul>li {
+/* --MENU-- */
+header#header nav#menu>ul>li {
     display: inline-block;
     margin: 0px 10px;
     position: relative;
 
 }
 
-.menu a {
+header#header nav#menu a {
     display: inline-block;
     padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
     width: 200px;
+    border: 1px solid #FFFFFF;
 }
 
-.menu a:hover {
+header#header nav#menu a:hover {
     background-color: #9ec200;
+    color: #000000;
 }
 
-.menu ul li ul {
+header#header nav#menu ul li ul {
     display: none;
     text-align: center;
 }
 
-.menu ul li a:hover+ul,
-.menu ul li ul:hover {
+header#header nav#menu ul li a:hover+ul,
+header#header nav#menu ul li ul:hover {
     display: inline;
     z-index: 999;
     position: absolute;
-    top: 41px;
+    top: 43px;
     left: 0;
 }
 
@@ -90,6 +94,7 @@ main#main {
     position: relative;
 }
 
+/* --BANNER-- */
 main#main section#banner {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 43, 0, 0.8)), url(assets/imagenes/banner.jpg) no-repeat center center/cover;
     min-height: 70vh;
@@ -202,17 +207,68 @@ main#main section#producto article div.info p.precio {
 /* PARTE ENVIO */
 main#main section#envio {
     min-height: 80vh;
-    padding-top: 50px;
 }
 
 main#main section#envio {
     background-color: #005a00;
 }
 
-main#main section#envio h2 {
+main#main section#envio article{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main#main section#envio article h2 {
     text-align: center;
     color: #FFFFFF;
     font-size: 2.5rem;
+}
+
+/* --FORMULARIO-- */
+main#main section#envio article div.formulario {
+    max-width: 400px;
+    background: #a7e400;
+    border-radius: 25px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 150px; 
+}
+  
+main#main section#envio article div.formulario input {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+main#main section#envio article div.formulario input[type="number"]{
+      width: 70px;
+}
+
+main#main section#envio article div.formulario button, main#main section#envio article div.formulario input[type="reset"]{
+    width: 100px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: #005a00;
+    color: #FFF;
+    border:1px solid #000;
+}
+
+main#main section#envio article div.formulario button:focus, main#main section#envio article div.formulario input[type="reset"]:focus{
+    outline: none;
+}
+
+main#main section#envio article div.formulario button:active, main#main section#envio article div.formulario input[type="reset"]:active{
+    border:1px solid white;
+}
+
+main#main section#envio article div.formulario button:hover, main#main section#envio article div.formulario input[type="reset"]:hover{
+    cursor: pointer;
+    background: #000000;
 }
 
 /* ASIDE*/
@@ -231,6 +287,7 @@ main#main aside#aside h4 {
     margin-bottom: 20px;
 }
 
+/* --REDES SOCIALES-- */
 main#main aside#aside div#social {
     display: flex;
     flex-direction: column;
