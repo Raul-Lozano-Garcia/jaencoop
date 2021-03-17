@@ -69,7 +69,7 @@ header#header nav#menu a {
 }
 
 header#header nav#menu a:hover {
-    background-color: #9ec200;
+    background-color: #9EC200;
     color: #000000;
 }
 
@@ -96,7 +96,7 @@ main#main {
 
 /* --BANNER-- */
 main#main section#banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 43, 0, 0.8)), url(assets/imagenes/banner.jpg) no-repeat center center/cover;
+    background: linear-gradient(#000000D0, #002B00D0), url(assets/imagenes/banner.jpg) no-repeat center center/cover;
     min-height: 70vh;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@ main#main section#productos h3 {
 }
 
 main#main section#productos a {
-    color: #005a00;
+    color: #005A00;
 }
 
 main#main section#productos a:hover {
@@ -198,7 +198,7 @@ main#main section#producto article {
 }
 
 main#main section#producto article div.info p.precio {
-    color: #005a00;
+    color: #005A00;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
@@ -210,7 +210,7 @@ main#main section#envio {
 }
 
 main#main section#envio {
-    background-color: #005a00;
+    background-color: #005A00;
 }
 
 main#main section#envio article{
@@ -230,7 +230,7 @@ main#main section#envio article h2 {
 /* --FORMULARIO-- */
 main#main section#envio article div.formulario {
     max-width: 400px;
-    background: #a7e400;
+    background: #A7E400;
     border-radius: 25px;
     text-align: center;
     padding: 25px;
@@ -239,8 +239,8 @@ main#main section#envio article div.formulario {
   
 main#main section#envio article div.formulario input {
     width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
+    border: 1px solid #CCC;
+    background: #FFFFFF;
     margin: 15px 0px;
     padding: 10px;
 }
@@ -253,9 +253,9 @@ main#main section#envio article div.formulario button, main#main section#envio a
     width: 100px;
     padding: 15px 10px;
     border-radius: 15px;
-    background-color: #005a00;
-    color: #FFF;
-    border:1px solid #000;
+    background-color: #005A00;
+    color: #FFFFFF;
+    border:1px solid #000000;
 }
 
 main#main section#envio article div.formulario button:focus, main#main section#envio article div.formulario input[type="reset"]:focus{
@@ -263,7 +263,7 @@ main#main section#envio article div.formulario button:focus, main#main section#e
 }
 
 main#main section#envio article div.formulario button:active, main#main section#envio article div.formulario input[type="reset"]:active{
-    border:1px solid white;
+    border:1px solid #FFFFFF;
 }
 
 main#main section#envio article div.formulario button:hover, main#main section#envio article div.formulario input[type="reset"]:hover{
@@ -277,7 +277,7 @@ main#main aside#aside {
     top: 0px;
     right: 0px;
     width: 10%;
-    background-color: #005a00;
+    background-color: #005A00;
     padding: 20px 10px;
 }
 
@@ -296,7 +296,7 @@ main#main aside#aside div#social {
 
 main#main aside#aside div#social a {
     margin: 10px 0px;
-    color: #9c9c9c;
+    color: #9C9C9C;
 }
 
 main#main aside#aside div#social a:hover {
