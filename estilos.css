@@ -1,0 +1,460 @@
+/* RESETEO */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+html,body {
+    font-size: 16px;
+    font-family: "Roboto Slab";
+}
+
+p {
+    line-height: 160%;
+}
+
+small {
+    color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i.flaticon-gorjeo:before,
+i.flaticon-simbolo-de-la-aplicacion-de-facebook:before,
+i.flaticon-logotipo-de-instagram::before {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 80%;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+/* HEADER*/
+header#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 30px 100px;
+}
+
+/* --LOGO-- */
+header#header #logo {
+    width: 200px;
+}
+
+/* --MENU-- */
+header#header li {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+
+}
+
+header#header nav#menu a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 150px;
+    border: 1px solid #FFFFFF;
+}
+
+header#header nav#menu a:hover {
+    background-color: #9EC200;
+    color: #000000;
+}
+
+header#header nav#menu ul li ul {
+    display: none;
+    text-align: center;
+}
+
+header#header nav#menu ul li a:hover+ul,
+header#header nav#menu ul li ul:hover {
+    display: inline;
+    z-index: 999;
+    position: absolute;
+    top: 42px;
+    left: -10px;
+}
+
+/* MAIN*/
+main#main {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/* --BANNER-- */
+main#main section#banner {
+    background: linear-gradient(#000000D0, #002B00D0), url(assets/imagenes/banner.jpg) no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main#main section#banner h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+main#main section#banner h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+/* PARTE PRODUCTOS */
+main#main section#productos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main#main section#productos h3 {
+    margin-bottom: 50px;
+}
+
+main#main section#productos a {
+    color: #005A00;
+}
+
+main#main section#productos a:hover {
+    color: #000000;
+}
+
+main#main section#productos p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main#main section#productos .producto{
+    padding-bottom: 50px;
+}
+
+/* PARTE NOSOTROS */
+main#main section#nosotros {
+    width: 60%;
+    display: flex;
+    padding: 50px 0px;
+    margin: auto;
+    flex-direction: column;
+}
+
+main#main section#nosotros >div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0px;
+}
+
+main#main section#nosotros >div .foto1 {
+    width: 300px;
+    height: 300px;
+    background: url(assets/imagenes/foto1.jpg) no-repeat center center/cover;
+    border-radius: 50px;
+}
+
+main#main section#nosotros >div .foto2 {
+    background: url(assets/imagenes/foto2.jpg) no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+main#main section#nosotros >div .texto1 {
+    width: 50%;
+    padding-right: 40px;
+}
+
+main#main section#nosotros >div p {
+    margin-bottom: 20px;
+}
+
+main#main section#nosotros >div .texto2 {
+    width: 50%;
+    padding-left: 40px;
+    order: 1;
+}
+
+/* PARTE EMPLEADO */
+main#main section#empleado {
+    text-align: center;
+    width: 70%;
+    padding: 150px 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main#main section#empleado h1{
+    font-size: 3em;
+    margin-bottom: .25em;
+}
+
+main#main section#empleado h2::after{
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    height: 3px;
+    margin-top: 1.5em;
+}
+
+main#main section#empleado #fotoEmpleado1{
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background:url("assets/imagenes/juan.jpg") no-repeat right bottom / cover;
+}
+
+main#main section#empleado #fotoEmpleado2{
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background:url("assets/imagenes/paco.jpg") no-repeat left center / cover;
+}
+
+main#main section#empleado #fotoEmpleado3{
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background:url("assets/imagenes/ramon.jpg") no-repeat center center / cover;
+}
+
+main#main section#empleado #fotoEmpleado4{
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    background:url("assets/imagenes/maria.jpg") no-repeat center center / cover;
+}
+
+
+main#main section#empleado table{
+    margin: 2em auto 0;
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+}
+
+main#main section#empleado table td{
+    text-align: center;
+    padding: 1em;
+    border: solid 1px black;
+}
+
+main#main section#empleado table th{
+    padding: 1em;
+    border: solid 1px black;
+}
+
+/* PARTE PRODUCTO */
+
+main#main section#producto {
+    width: 90%;
+    margin: 0 auto;
+    padding: 150px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main#main section#producto #fotoProducto{
+    width: 300px;
+}
+
+main#main section#producto .precio {
+    color: #005A00;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main#main section#envio {
+    padding: 5em 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #005A00;
+}
+
+main#main section#envio h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+
+main#main section#envio form {
+    max-width: 400px;
+    background: #A7E400;
+    border-radius: 25px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px; 
+}
+  
+main#main section#envio form input {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFFFFF;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+main#main section#envio form input[type="number"]{
+      width: 70px;
+}
+
+main#main section#envio form input[type="submit"], main#main section#envio form input[type="reset"]{
+    width: 100px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: #005A00;
+    color: #FFFFFF;
+    border:1px solid #000000;
+}
+
+main#main section#envio form input[type="submit"]:focus, main#main section#envio form input[type="reset"]:focus{
+    outline: none;
+}
+
+main#main section#envio form input[type="submit"]:active, main#main section#envio form input[type="reset"]:active{
+    border:1px solid #FFFFFF;
+}
+
+main#main section#envio form input[type="submit"]:hover, main#main section#envio form input[type="reset"]:hover{
+    cursor: pointer;
+    background: #000000;
+}
+
+/* PARTE FAQ */
+
+main#main section#faq{
+    width: 70%;
+    padding: 3em 0px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+main#main section#faq h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+main#main section#faq h2{
+    font-size: 1em;
+    color: white;
+    background-color: #000000;
+    padding: 1em;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main#main section#faq p{
+    padding: 1em;
+}
+
+main#main section#faq div{
+    margin:2em 0px;
+}
+
+main#main section#faq p:hover{
+    border: solid 1px black;
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* PARTE OTROS PRODUCTOS */
+main#main #otrosProductos{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 50px 0px;
+}
+
+main#main #otrosProductos h4{
+    margin-bottom: 1.5em;
+}
+
+main#main #otrosProductos>div{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main#main #otrosProductos>div>div{
+    width: 300px;
+    height: 300px;
+}
+
+main#main #otrosProductos a {
+    color: #005A00;
+}
+
+main#main #otrosProductos a:hover {
+    color: #000000;
+}
+
+/* ASIDE*/
+main#main aside#aside {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10%;
+    background-color: #005A00;
+    padding: 20px;
+}
+
+main#main aside#aside h4 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main#main #social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main#main #social a {
+    margin: 10px 0px;
+    color: #9C9C9C;
+}
+
+main#main #social a:hover {
+    color: #FFFFFF;
+}
+
+/* FOOTER */
+footer#footer {
+    padding: 3.5em 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
